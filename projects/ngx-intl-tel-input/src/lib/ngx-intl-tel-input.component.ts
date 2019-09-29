@@ -137,7 +137,7 @@ export class NgxIntlTelInputComponent implements OnInit, OnChanges {
 	 */
 	searchCountry() {
 		if (!this.countrySearchText) {
-			this.countryList.nativeElement.querySelector('li').scrollIntoView({ behavior: 'smooth' });
+			this.countryList.nativeElement.querySelector('.country-list li').scrollIntoView({ behavior: 'smooth' });
 			return;
 		}
 		const countrySearchTextLower = this.countrySearchText.toLowerCase();
